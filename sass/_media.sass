@@ -13,3 +13,71 @@
       &:hover
         color: $light
         background-color: $secondary
+@media (max-width: 768px)
+  .nav
+    width: 84%
+    padding: 26px 0 44px 0
+    &-navbar
+      display: none
+    &-button
+      display: none
+      &__mobile
+        display: flex
+  .hero
+    width: 92%
+    padding: 42px 0 36px 28px
+    background-position-x: -8px
+    background-position-y: -402px
+    background-size: 70%, 150%
+    &-tag
+      margin-bottom: 24px
+    &-title
+      font-size: 48px
+      line-height: 60px
+      margin-bottom: 20px
+    &-text
+      width: 428px
+      font-size: 18px
+      line-height: 32px
+      margin-bottom: 37px
+    &-button
+      margin-bottom: 38px
+    &-advantages
+      &__text
+        margin-right: 20px
+@media (max-width: 576px)
+  .nav
+    padding: 18px 0 42px 0
+  .hero
+    padding: 381px 0 36px 28px
+    &-tag
+      padding: 2px 27px
+    &-title
+      width: 88%
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+      letter-spacing: 0.2px
+    &-text
+      width: 92%
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 24px
+    &-button
+      width: 92%
+      margin-bottom: 24px
+      padding: 12px 38px
+      font-size: 16px
+      line-height: 22px
+    &-advantages
+      flex-wrap: wrap
+      justify-content: center
+      &__img
+        width: 24px
+        height: 24px
+        margin-bottom: 22px
+      &__text
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.2px
+        margin-bottom: 22px
