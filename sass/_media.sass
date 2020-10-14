@@ -29,6 +29,7 @@
     background-position-x: -8px
     background-position-y: -402px
     background-size: 70%, 150%
+    margin-bottom: 80px
     &-tag
       margin-bottom: 24px
     &-title
@@ -43,8 +44,28 @@
     &-button
       margin-bottom: 38px
     &-advantages
+      &__item
+        margin-right: 22px
       &__text
-        margin-right: 20px
+        margin-right: 0
+  .collection
+    width: 92%
+    margin: 0 auto
+    flex-direction: column
+    margin-bottom: 80px
+    &-images
+      width: 95%
+      margin-bottom: 28px
+      align-self: center
+    &-content
+      width: 96%
+      align-self: center
+      &__subtitle
+        letter-spacing: 0.5px
+      &__text
+        width: 100%
+        margin-bottom: 24px
+
 @media (max-width: 576px)
   .header
     width: 100%
@@ -60,6 +81,7 @@
     background-size: 0, 1050px
     border-radius: 0
     padding: 381px 0 20px 0
+    margin-bottom: 64px
     &-tag
       max-width: 196px
       padding: 2px 26px
@@ -81,7 +103,7 @@
       line-height: 28px
       text-align: center
       align-self: center
-      margin-bottom: 24px
+      margin-bottom: 27px
     &-button
       max-width: 82%
       align-self: center
@@ -109,3 +131,37 @@
         line-height: 20px
         letter-spacing: 0.2px
         margin-right: 0
+  .collection
+    &-images
+      width: 290px
+      height: 407px
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(4, 1fr)
+      gap: 14px
+      &__big
+        grid-column: span 2
+        grid-row: 1 / 4
+        border-radius: 3.36px
+      &__small
+        grid-column: span 1
+        grid-row: 4 / 5
+        border-radius: 3.36px
+    &-content
+      width: 94%
+      &__subtitle
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.2px
+        margin-bottom: 20px
+      &__text
+        font-size: 16px
+        line-height: 28px
+        text-align: center
+        margin-bottom: 110px
+      &__link
+        display: none
+        // text-align: center
+        // margin-bottom: 36px
+      &__label
+        display: none
