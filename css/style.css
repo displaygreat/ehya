@@ -676,6 +676,165 @@ img {
   cursor: pointer;
 }
 
+.trends {
+  width: 1130px;
+  margin: 0 auto;
+  margin-bottom: 145px;
+}
+
+.trends-header {
+  width: 1130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trends-header__subtitle {
+  font-family: 'hk-grotesk-bold', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+}
+
+.trends-header__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.trends-header__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #5A7184;
+  margin-left: 38px;
+}
+
+.trends-cards {
+  width: 1130px;
+  height: 932px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+.tab {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #183B56;
+  cursor: pointer;
+}
+
+.tab--active {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #183B56;
+  cursor: pointer;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content--active {
+  display: block;
+}
+
+.trend-card__box {
+  width: 260px;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.trend-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trend-card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.trend-card__name {
+  flex-basis: 100%;
+  display: block;
+  font-family: 'hk-grotesk-bold', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin-bottom: 3px;
+}
+
+.trend-card__price {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+}
+
+.trend-card__button {
+  justify-self: flex-end;
+  color: #1565D8;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.trend-card__plus {
+  width: 260px;
+  height: 350px;
+  border-radius: 8px;
+  background-color: #1565D8;
+  position: relative;
+}
+
+.trend-card__link {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  text-decoration: none;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+
+.trend-card__label {
+  position: absolute;
+  font-family: 'hk-grotesk-bold', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  top: 182px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 @media (min-width: 992px) {
   .nav-navbar__link:hover {
     border-bottom: 2px solid #183B56;

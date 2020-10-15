@@ -29,4 +29,15 @@ $(document).ready(function () {
     modalDialog.removeClass('modal-dialog__visible')
   }
 
+  var tab = $('.tab');
+  var tabContent = $('tab-content');
+
+  tab.on('click', function (event) {
+    var activeContent = $(this).attr('data-target');
+    tab.removeClass('tab--active');
+    tabContent.removeClass('tab-content--active');
+    $(activeContent).addClass('tab--active');
+    $(this).addClass('tab-content--active');
+  });
+
 });
