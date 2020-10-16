@@ -40,4 +40,28 @@ $(document).ready(function () {
     $(this).addClass('tab--active');
   });
 
+  var mySwiper = new Swiper('.testimonial-slider', {
+    // Optional parameters
+    loop: true,
+    autoplay: {
+      delay: 7000,
+    },
+
+    // If we need pagination
+    pagination: {
+      el: '.testimonial-pagination',
+      clickable: true,
+    },
+
+  })
+
+  $(".testimonial-slider").mouseenter(function () {
+    mySwiper.autoplay.stop();
+  });
+
+  $(".testimonial-slider").mouseleave(function () {
+    mySwiper.autoplay.start();
+  });
+
+
 });

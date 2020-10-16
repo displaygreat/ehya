@@ -370,6 +370,13 @@ template {
   src: url(../fonts/hk-grotesk.medium.otf);
   font-weight: medium;
   font-style: normal;
+}
+
+@font-face {
+  font-family: hk-grotesk-regular;
+  src: url(../fonts/hk-grotesk.regular.otf);
+  font-weight: regular;
+  font-style: normal;
   * {
     box-sizing: border-box;
   }
@@ -893,6 +900,70 @@ img {
   left: 50%;
   transform: translate(-50%);
   white-space: nowrap;
+}
+
+.testimonial {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.testimonial-slider__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-quote {
+  margin-bottom: 24px;
+}
+
+.testimonial-text {
+  font-family: 'hk-grotesk-regular', sans-serif;
+  font-style: normal;
+  font-weight: regular;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.133333px;
+  color: #183B56;
+  margin-bottom: 28px;
+}
+
+.testimonial-client {
+  display: block;
+  font-family: 'hk-grotesk-bold', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin-bottom: 48px;
+}
+
+.testimonial-pagination {
+  width: 47px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.testimonial-pagination__button {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #B3BAC5;
+}
+
+.testimonial-pagination__button--active {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #183B56;
 }
 
 @media (min-width: 992px) {
