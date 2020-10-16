@@ -10,7 +10,7 @@
       width: 800px
       margin: 0 auto
   &-quote
-    margin-bottom: 24px
+    margin-bottom: 18px
   &-text
     font-family: 'hk-grotesk-regular', sans-serif
     font-style: normal
@@ -31,19 +31,18 @@
     text-align: center
     letter-spacing: 0.2px
     color: $primary
-    margin-bottom: 48px
-  &-pagination
-    width: 47px
-    display: flex
-    justify-content: space-between
-    margin: 0 auto
-    &__button
-      width: 5px
-      height: 5px
-      border-radius: 50%
-      background-color: #B3BAC5
-      &--active
+  .swiper
+    &-pagination
+      display: flex
+      justify-content: space-between
+      width: 58px
+      position: unset
+      margin: 48px auto 0
+      &-bullet
         width: 5px
         height: 5px
+        background-color: #B3BAC5
         border-radius: 50%
-        background-color: $primary
+        margin-right: 5px
+        &-active
+          background-color: $primary

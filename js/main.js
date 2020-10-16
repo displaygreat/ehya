@@ -41,13 +41,11 @@ $(document).ready(function () {
   });
 
   var mySwiper = new Swiper('.testimonial-slider', {
-    // Optional parameters
     loop: true,
     autoplay: {
       delay: 7000,
     },
 
-    // If we need pagination
     pagination: {
       el: '.testimonial-pagination',
       clickable: true,
@@ -62,6 +60,5 @@ $(document).ready(function () {
   $(".testimonial-slider").mouseleave(function () {
     mySwiper.autoplay.start();
   });
-
 
 });

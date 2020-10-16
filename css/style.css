@@ -694,7 +694,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 57px;
 }
 
 .trends-header__subtitle {
@@ -917,7 +917,7 @@ img {
 }
 
 .testimonial-quote {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .testimonial-text {
@@ -942,27 +942,25 @@ img {
   text-align: center;
   letter-spacing: 0.2px;
   color: #183B56;
-  margin-bottom: 48px;
 }
 
-.testimonial-pagination {
-  width: 47px;
+.testimonial .swiper-pagination {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  width: 58px;
+  position: unset;
+  margin: 48px auto 0;
 }
 
-.testimonial-pagination__button {
+.testimonial .swiper-pagination-bullet {
   width: 5px;
   height: 5px;
-  border-radius: 50%;
   background-color: #B3BAC5;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 
-.testimonial-pagination__button--active {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
+.testimonial .swiper-pagination-bullet-active {
   background-color: #183B56;
 }
 
