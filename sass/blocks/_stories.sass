@@ -2,11 +2,16 @@
   width: 1150px
   margin: 0 auto
   margin-bottom: 140px
-  &-wrap
+  &-slider
+    // width: 1150px
+    height: max-content
+  &-slide
     display: flex
     justify-content: space-between
-  &-content
-    margin-right: 60px
+  &-articles
+    // width: 662px
+    display: flex
+    justify-content: space-between
   &::before
     content: ''
     display: block
@@ -14,8 +19,10 @@
     height: 1px
     background-color: #E5EAF4
     margin: 0 auto
-    margin-bottom: 126px
+    margin-bottom: 118px
   &-tag
+    display: block
+    width: fit-content
     font-style: normal
     font-weight: 600
     font-size: 14px
@@ -26,7 +33,6 @@
     background: rgba(54, 179, 126, 0.1)
     border-radius: 2000px
     padding: 6px 16px
-    margin-bottom: 34px
   &-subtitle
     width: 334px
     font-family: 'hk-grotesk-bold', sans-serif
@@ -36,7 +42,7 @@
     line-height: 60px
     letter-spacing: 0.2px
     color: $primary
-    margin: 34px 0 24px 0
+    margin: 29px 0 24px 0
   &-text
     width: 392px
     font-style: normal
@@ -58,6 +64,7 @@
       border: 2px solid #959EAD
       box-sizing: border-box
       border-radius: 50%
+      cursor: pointer
     &__right
       width: 54px
       height: 56px
@@ -67,31 +74,33 @@
       border: 2px solid $primary
       box-sizing: border-box
       border-radius: 50%
+      cursor: pointer
   &-article__1,
   &-article__2
     position: relative
-    margin-top: 3px
-  &-article__1
-    margin-left: 9px
+    margin-top: 10px
   &-article__2
     margin-right: 9px
   &-article
+    height: 475px
     &__box
       width: 312px
       height: 317px
       border-radius: 8px 8px 0px 0px
       overflow: hidden
+      margin-right: 10px
     &__img
       object-fit: cover
+      object-position: 0 -58px
     &__wrap
-      width: 312px
+      width: 259px
       padding: 20px 32px 20px 20px
       background: #FAFDFF
       position: absolute
       top: 297px
       left: 10px
     &__title
-      width: 210px
+      width: 220px
       font-family: 'hk-grotesk-medium'
       font-style: normal
       font-weight: 500

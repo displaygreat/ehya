@@ -1,677 +1,570 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ehya</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <nav class="nav">
-        <a href="Index.html" class="nav-logo"
-          ><img src="img/logo.svg" alt="logo: Ehya" class="nav-logo__img"
-        /></a>
-        <div class="nav-navbar">
-          <a href="#" class="nav-navbar__link">Главная</a>
-          <a href="#" class="nav-navbar__link">Новинки</a>
-          <a href="#" class="nav-navbar__link">Тренды</a>
-          <a href="#" class="nav-navbar__link">Отзывы</a>
-          <a href="#" class="nav-navbar__link">Контакты</a>
-        </div>
-        <!-- /.navbar -->
-        <button class="nav-button">Войти</button>
-        <button data-toggle="modal" class="nav-button__mobile">
-          <span class="nav-button__mobile-line"></span>
-          <span class="nav-button__mobile-line"></span>
-          <span class="nav-button__mobile-line"></span>
-        </button>
-      </nav>
-      <!-- /.nav -->
-      <div class="hero">
-        <span class="hero-tag"># READY TO BE COOL</span>
-        <h1 lang="en" class="hero-title">
-          Каждый&nbsp;может быть&nbsp;крутым и&nbsp;модным
-        </h1>
-        <p class="hero-text">
-          Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду и
-          обновлять свой стиль. Всё это вы можете найти здесь. Начните сейчас.
-        </p>
-        <a href="#" class="hero-button">Подобрать одежду</a>
-        <div class="hero-advantages">
-          <div class="hero-advantages__item">
-            <img
-              src="img/payment.svg"
-              alt="Онлайн оплата"
-              class="hero-advantages__img"
-            />
-            <span class="hero-advantages__text">Онлайн оплата</span>
-          </div>
-          <div class="hero-advantages__item">
-            <img
-              src="img/guarantee.svg"
-              alt="Гарантия"
-              class="hero-advantages__img"
-            />
-            <span class="hero-advantages__text">Гарантия</span>
-          </div>
-          <div class="hero-advantages__item">
-            <img src="img/quality.svg" alt="" class="hero-advantages__img" />
-            <span class="hero-advantages__text">Качество</span>
-          </div>
-        </div>
-        <!-- /.hero-advantages -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ehya</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="Index.html" class="nav-logo"><img src="img/logo.svg" alt="logo: Ehya" class="nav-logo__img" /></a>
+      <div class="nav-navbar">
+        <a href="#" class="nav-navbar__link">Главная</a>
+        <a href="#" class="nav-navbar__link">Новинки</a>
+        <a href="#" class="nav-navbar__link">Тренды</a>
+        <a href="#" class="nav-navbar__link">Отзывы</a>
+        <a href="#" class="nav-navbar__link">Контакты</a>
       </div>
-      <!-- /.hero -->
-    </header>
-    <main>
-      <section class="collection">
-        <div class="collection-images">
-          <img
-            class="collection-images__img collection-images__big"
-            src="img/new-collection-1.png"
-            alt="Фото из коллекции"
-          />
-          <img
-            class="collection-images__img collection-images__small"
-            src="img/new-collection-2.png"
-            alt="Фото из коллекции"
-          />
-          <img
-            class="collection-images__img collection-images__small"
-            src="img/new-collection-3.png"
-            alt="Фото из коллекции"
-          />
+      <!-- /.navbar -->
+      <button class="nav-button">Войти</button>
+      <button data-toggle="modal" class="nav-button__mobile">
+        <span class="nav-button__mobile-line"></span>
+        <span class="nav-button__mobile-line"></span>
+        <span class="nav-button__mobile-line"></span>
+      </button>
+    </nav>
+    <!-- /.nav -->
+    <div class="hero">
+      <span class="hero-tag"># READY TO BE COOL</span>
+      <h1 lang="en" class="hero-title">
+        Каждый&nbsp;может быть&nbsp;крутым и&nbsp;модным
+      </h1>
+      <p class="hero-text">
+        Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду и
+        обновлять свой стиль. Всё это вы можете найти здесь. Начните сейчас.
+      </p>
+      <a href="#" class="hero-button">Подобрать одежду</a>
+      <div class="hero-advantages">
+        <div class="hero-advantages__item">
+          <img src="img/payment.svg" alt="Онлайн оплата" class="hero-advantages__img" />
+          <span class="hero-advantages__text">Онлайн оплата</span>
         </div>
-        <div class="collection-content">
-          <h2 lang="en" class="collection-content__subtitle">
-            Новая зимняя коллекция
-          </h2>
-          <p class="collection-content__text">
-            Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции,
-            нажав кнопку ниже. Успейте купить, пока коллекция есть в наличии.
-            Используйте код EHYA20, чтобы получить 20%&nbsp;скидку.
-          </p>
-          <a href="#" class="collection-content__link"
-            ><span class="collection-content__label">Посмотреть коллекцию</span>
-            <img
-              src="img/arrow.svg"
-              alt="Кнопка: посмотреть коллекцию"
-              class="collection-content__arrow"
-          /></a>
+        <div class="hero-advantages__item">
+          <img src="img/guarantee.svg" alt="Гарантия" class="hero-advantages__img" />
+          <span class="hero-advantages__text">Гарантия</span>
         </div>
-        <!-- /.collection-content -->
-      </section>
-      <section class="trends">
-        <div class="trends-header">
-          <h2 lang="en" class="trends-header__subtitle">Тренды</h2>
-          <ul class="trends-header__list">
-            <li
-              data-target="#trend"
-              class="trends-header__item tab tab--active"
-            >
-              Новинки
-            </li>
-            <li data-target="#new" class="trends-header__item tab">Лучшее</li>
-            <li data-target="#soon" class="trends-header__item tab">Скоро</li>
-          </ul>
-        </div>
-        <!-- /.trends-header -->
-        <div id="trend" class="tab-content tab-content--active">
-          <div class="trends-cards">
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-1.png"
-                  alt="Minimalist Style"
-                  class="trend-card__img"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Minimalist Style</span>
-                <span class="trend-card__price">$25.7</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-              <!-- /.trend-card__content -->
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-2.png"
-                  alt="Luxury Gown"
-                  class="trend-card__img trend-card__img--2"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Luxury Gown</span>
-                <span class="trend-card__price">$30.6</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-              <!-- /.trend-card_content -->
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-3.png"
-                  alt="Full Coloristy"
-                  class="trend-card__img trend-card__img--3"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Full Coloristy</span>
-                <span class="trend-card__price">$25.7</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-4.png"
-                  alt="Pinky Winky"
-                  class="trend-card__img trend-card__img--4"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Pinky Winky</span>
-                <span class="trend-card__price">$109</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-5.png"
-                  alt="Holiday Vibes"
-                  class="trend-card__img trend-card__img--5"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Holiday Vibes</span>
-                <span class="trend-card__price">$51.2</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-6.png"
-                  alt="Swaggie Shaggy"
-                  class="trend-card__img trend-card__img--6"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Swaggie Shaggy</span>
-                <span class="trend-card__price">$81.3</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-7.png"
-                  alt="Red Formal"
-                  class="trend-card__img trend-card__img--7"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Red Formal</span>
-                <span class="trend-card__price">$66.8</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card trend-card__plus">
-              <a href="#" class="trend-card__link"
-                ><img
-                  src="img/plus.svg"
-                  alt="Кнопка: смотреть больше коллекций"
-                  class="trend-card__img"
-                /><span lang="en" class="trend-card__label"
-                  >Смотреть <br />больше коллекций</span
-                ></a
-              >
-            </div>
-          </div>
-          <!-- /.ternds-cards -->
-        </div>
-        <!-- /.tab-content -->
-        <div id="new" class="tab-content">
-          <div class="trends-cards">
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-3.png"
-                  alt="Minimalist Style"
-                  class="trend-card__img trend-card__img--3"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Minimalist Style</span>
-                <span class="trend-card__price">$25.7</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-              <!-- /.trend-card__content -->
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-4.png"
-                  alt="Luxury Gown"
-                  class="trend-card__img trend-card__img--4"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Luxury Gown</span>
-                <span class="trend-card__price">$30.6</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-              <!-- /.trend-card_content -->
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-5.png"
-                  alt="Full Coloristy"
-                  class="trend-card__img trend-card__img--5"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Full Coloristy</span>
-                <span class="trend-card__price">$25.7</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-6.png"
-                  alt="Pinky Winky"
-                  class="trend-card__img trend-card__img--6"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Pinky Winky</span>
-                <span class="trend-card__price">$109</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-7.png"
-                  alt="Holiday Vibes"
-                  class="trend-card__img trend-card__img--7"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Holiday Vibes</span>
-                <span class="trend-card__price">$51.2</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-1.png"
-                  alt="Swaggie Shaggy"
-                  class="trend-card__img"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Swaggie Shaggy</span>
-                <span class="trend-card__price">$81.3</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-2.png"
-                  alt="Red Formal"
-                  class="trend-card__img trend-card__img--2"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Red Formal</span>
-                <span class="trend-card__price">$66.8</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card trend-card__plus">
-              <a href="#" class="trend-card__link"
-                ><img
-                  src="img/plus.svg"
-                  alt="Кнопка: смотреть больше коллекций"
-                  class="trend-card__img"
-                /><span class="trend-card__label"
-                  >Смотреть <br />больше коллекций</span
-                ></a
-              >
-            </div>
-          </div>
-          <!-- /.ternds-cards -->
-        </div>
-        <!-- /.tab-content -->
-        <div id="soon" class="tab-content">
-          <div class="trends-cards">
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-5.png"
-                  alt="Minimalist Style"
-                  class="trend-card__img"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Minimalist Style</span>
-                <span class="trend-card__price">$25.7</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-              <!-- /.trend-card__content -->
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-6.png"
-                  alt="Luxury Gown"
-                  class="trend-card__img trend-card__img--6"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Luxury Gown</span>
-                <span class="trend-card__price">$30.6</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-              <!-- /.trend-card_content -->
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-7.png"
-                  alt="Full Coloristy"
-                  class="trend-card__img trend-card__img--7"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Full Coloristy</span>
-                <span class="trend-card__price">$25.7</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-1.png"
-                  alt="Pinky Winky"
-                  class="trend-card__img"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Pinky Winky</span>
-                <span class="trend-card__price">$109</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-2.png"
-                  alt="Holiday Vibes"
-                  class="trend-card__img trend-card__img--2"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Holiday Vibes</span>
-                <span class="trend-card__price">$51.2</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-3.png"
-                  alt="Swaggie Shaggy"
-                  class="trend-card__img trend-card__img--3"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Swaggie Shaggy</span>
-                <span class="trend-card__price">$81.3</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card">
-              <div class="trend-card__box">
-                <img
-                  src="img/trend-4.png"
-                  alt="Red Formal"
-                  class="trend-card__img trend-card__img--4"
-                />
-              </div>
-              <div class="trend-card__content">
-                <span class="trend-card__name">Red Formal</span>
-                <span class="trend-card__price">$66.8</span>
-                <button class="trend-card__button">
-                  <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
-                </button>
-              </div>
-            </div>
-            <div class="trend-card trend-card__plus">
-              <a href="#" class="trend-card__link"
-                ><img
-                  src="img/plus.svg"
-                  alt="Кнопка: смотреть больше коллекций"
-                  class="trend-card__img"
-                /><span class="trend-card__label"
-                  >Смотреть <br />больше коллекций</span
-                ></a
-              >
-            </div>
-          </div>
-          <!-- /.ternds-cards -->
-        </div>
-        <!-- /.tab-content -->
-      </section>
-      <div class="testimonial">
-        <div class="swiper-container testimonial-slider">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="testimonial-slider__item">
-                <img
-                  src="img/quote-left.svg"
-                  alt="Иконка: кавычки"
-                  class="testimonial-quote"
-                />
-                <p lang="en" class="testimonial-text">
-                  Мне очень нравятся дизайн и стили, которые создает Ehya. Они
-                  такие разные и новаторские. Я покупала несколько раз из
-                  коллекций, и что мне нравится, это то, что они действительно
-                  неподвластны времени, а качество ткани просто превосходно. Я с
-                  нетерпением жду новых коллекций от сезона к сезону
-                </p>
-                <span lang="en" class="testimonial-client">
-                  Алисия Пума - клиент Fashun</span
-                >
-              </div>
-              <!-- /.testimonial-slider__item -->
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-slider__item">
-                <img
-                  src="img/quote-left.svg"
-                  alt="Иконка: кавычки"
-                  class="testimonial-quote"
-                />
-                <p lang="en" class="testimonial-text">
-                  Я очень люблю магазин Ehya. Нравится все, атмосфера магазина,
-                  продавцы консультанты. Всегда очень приятное обслуживание. В
-                  каждой новой коллекции можно найти обновки по своим
-                  предпочтениям. Модели женственные, утонченные, для стройных
-                  девушек.
-                </p>
-                <span lang="en" class="testimonial-client">
-                  Мария Старкова - клиент Fashun
-                </span>
-              </div>
-              <!-- /.testimonial-slider__item -->
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-slider__item">
-                <img
-                  src="img/quote-left.svg"
-                  alt="Иконка: кавычки"
-                  class="testimonial-quote"
-                />
-                <p lang="en" class="testimonial-text">
-                  Так как я давно занимаюсь одеждой и разными брендами - решила
-                  наконец написать об одном известном бренде Ehya. Одежда этого
-                  бренда - это микс повседневной, для офиса и для вечеринок, в
-                  принципе - там можно найти абсолютно все, начиная от
-                  кардиганов и джинсов и заканчивая ремешками и прочими
-                  аксессуарами.
-                </p>
-                <span lang="en" class="testimonial-client">
-                  Хана Меир - клиент Fashun
-                </span>
-              </div>
-              <!-- /.testimonial-slider__item -->
-            </div>
-          </div>
-
-          <div class="swiper-pagination testimonial-pagination">
-            <div class="testimonial-pagination__button"></div>
-            <div
-              class="testimonial-pagination__button testimonial-pagination__button--active"
-            ></div>
-            <div class="testimonial-pagination__button"></div>
-          </div>
+        <div class="hero-advantages__item">
+          <img src="img/quality.svg" alt="" class="hero-advantages__img" />
+          <span class="hero-advantages__text">Качество</span>
         </div>
       </div>
-      <!-- /.testimonial -->
-      <section class="stories">
-        <div class="stories-wrap">
-          <div class="stories-content">
-            <span class="stories-tag">Истории</span>
-            <h2 lang="en" class="stories-subtitle">Это История Fashun</h2>
-            <p class="stories-text">
-              Ознакомьтесь с нашим рассказом о моде. Написано нашим дизайнером и
-              специалистом.
-            </p>
-            <div class="stories-btn">
-              <div class="stories-btn__left">
-                <img
-                  src="img/arrow-prev.svg"
-                  alt="Кнопка: Назад"
-                  class="stories-btn__img"
-                />
-              </div>
-              <div class="stories-btn__right">
-                <img
-                  src="img/arrow-next.svg"
-                  alt="Кнопка: Вперед"
-                  class="stories-btn__img"
-                />
-              </div>
-            </div>
-            <!-- /.stories-btn -->
-          </div>
-          <!-- /.stories-content -->
-          <article class="stories-article stories-article__1">
-            <div class="stories-article__box">
-              <img
-                src="img/post-1.png"
-                alt="Фото-иллюстрация к статье"
-                class="stories-article__img"
-              />
-            </div>
-            <div class="stories-article__wrap">
-              <h3 lang="en" class="stories-article__title">
-                Mix & Match Style 01: повседневный и формальный стиль
-              </h3>
-              <a href="#" class="stories-article__link">Читать далее</a>
-            </div>
-          </article>
-          <article class="stories-article stories-article__2">
-            <div class="stories-article__box">
-              <img
-                src="img/post-2.png"
-                alt="Фото-иллюстрация к статье"
-                class="stories-article__img"
-              />
-            </div>
-            <div class="stories-article__wrap">
-              <h3 lang="en" class="stories-article__title">
-                Лайфхак: Купите одежду Thrifft на воскресном рынке
-              </h3>
-              <a href="#" class="stories-article__link">Читать далее</a>
-            </div>
-          </article>
-        </div>
-        <!-- /.stories-wrap -->
-      </section>
-    </main>
-    <div class="modal-overlay"></div>
-    <!-- /.modal__overlay -->
-    <div class="modal-dialog">
-      <a href="#" class="modal-dialog__close">
-        <img src="img/close.svg" alt="icon: close" />
-      </a>
-      <a href="#" class="modal-dialog__link">Главная</a>
-      <a href="#" class="modal-dialog__link">Новинки</a>
-      <a href="#" class="modal-dialog__link">Тренды</a>
-      <a href="#" class="modal-dialog__link">Отзывы</a>
-      <a href="#" class="modal-dialog__link">Контакты</a>
-      <button data-toggle="modal" class="modal-dialog__button">Войти</button>
+      <!-- /.hero-advantages -->
     </div>
-    <!-- /.modal-dialog -->
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+    <!-- /.hero -->
+  </header>
+  <main>
+    <section class="collection">
+      <div class="collection-images">
+        <img class="collection-images__img collection-images__big" src="img/new-collection-1.png"
+          alt="Фото из коллекции" />
+        <img class="collection-images__img collection-images__small" src="img/new-collection-2.png"
+          alt="Фото из коллекции" />
+        <img class="collection-images__img collection-images__small" src="img/new-collection-3.png"
+          alt="Фото из коллекции" />
+      </div>
+      <div class="collection-content">
+        <h2 lang="en" class="collection-content__subtitle">
+          Новая зимняя коллекция
+        </h2>
+        <p class="collection-content__text">
+          Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции,
+          нажав кнопку ниже. Успейте купить, пока коллекция есть в наличии.
+          Используйте код EHYA20, чтобы получить 20%&nbsp;скидку.
+        </p>
+        <a href="#" class="collection-content__link"><span class="collection-content__label">Посмотреть коллекцию</span>
+          <img src="img/arrow.svg" alt="Кнопка: посмотреть коллекцию" class="collection-content__arrow" /></a>
+      </div>
+      <!-- /.collection-content -->
+    </section>
+    <section class="trends">
+      <div class="trends-header">
+        <h2 lang="en" class="trends-header__subtitle">Тренды</h2>
+        <ul class="trends-header__list">
+          <li data-target="#trend" class="trends-header__item tab tab--active">
+            Новинки
+          </li>
+          <li data-target="#new" class="trends-header__item tab">Лучшее</li>
+          <li data-target="#soon" class="trends-header__item tab">Скоро</li>
+        </ul>
+      </div>
+      <!-- /.trends-header -->
+      <div id="trend" class="tab-content tab-content--active">
+        <div class="trends-cards">
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-1.png" alt="Minimalist Style" class="trend-card__img" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Minimalist Style</span>
+              <span class="trend-card__price">$25.7</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+            <!-- /.trend-card__content -->
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-2.png" alt="Luxury Gown" class="trend-card__img trend-card__img--2" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Luxury Gown</span>
+              <span class="trend-card__price">$30.6</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+            <!-- /.trend-card_content -->
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-3.png" alt="Full Coloristy" class="trend-card__img trend-card__img--3" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Full Coloristy</span>
+              <span class="trend-card__price">$25.7</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-4.png" alt="Pinky Winky" class="trend-card__img trend-card__img--4" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Pinky Winky</span>
+              <span class="trend-card__price">$109</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-5.png" alt="Holiday Vibes" class="trend-card__img trend-card__img--5" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Holiday Vibes</span>
+              <span class="trend-card__price">$51.2</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-6.png" alt="Swaggie Shaggy" class="trend-card__img trend-card__img--6" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Swaggie Shaggy</span>
+              <span class="trend-card__price">$81.3</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-7.png" alt="Red Formal" class="trend-card__img trend-card__img--7" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Red Formal</span>
+              <span class="trend-card__price">$66.8</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card trend-card__plus">
+            <a href="#" class="trend-card__link"><img src="img/plus.svg" alt="Кнопка: смотреть больше коллекций"
+                class="trend-card__img" /><span lang="en" class="trend-card__label">Смотреть <br />больше
+                коллекций</span></a>
+          </div>
+        </div>
+        <!-- /.ternds-cards -->
+      </div>
+      <!-- /.tab-content -->
+      <div id="new" class="tab-content">
+        <div class="trends-cards">
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-3.png" alt="Minimalist Style" class="trend-card__img trend-card__img--3" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Minimalist Style</span>
+              <span class="trend-card__price">$25.7</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+            <!-- /.trend-card__content -->
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-4.png" alt="Luxury Gown" class="trend-card__img trend-card__img--4" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Luxury Gown</span>
+              <span class="trend-card__price">$30.6</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+            <!-- /.trend-card_content -->
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-5.png" alt="Full Coloristy" class="trend-card__img trend-card__img--5" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Full Coloristy</span>
+              <span class="trend-card__price">$25.7</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-6.png" alt="Pinky Winky" class="trend-card__img trend-card__img--6" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Pinky Winky</span>
+              <span class="trend-card__price">$109</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-7.png" alt="Holiday Vibes" class="trend-card__img trend-card__img--7" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Holiday Vibes</span>
+              <span class="trend-card__price">$51.2</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-1.png" alt="Swaggie Shaggy" class="trend-card__img" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Swaggie Shaggy</span>
+              <span class="trend-card__price">$81.3</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-2.png" alt="Red Formal" class="trend-card__img trend-card__img--2" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Red Formal</span>
+              <span class="trend-card__price">$66.8</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card trend-card__plus">
+            <a href="#" class="trend-card__link"><img src="img/plus.svg" alt="Кнопка: смотреть больше коллекций"
+                class="trend-card__img" /><span class="trend-card__label">Смотреть <br />больше коллекций</span></a>
+          </div>
+        </div>
+        <!-- /.ternds-cards -->
+      </div>
+      <!-- /.tab-content -->
+      <div id="soon" class="tab-content">
+        <div class="trends-cards">
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-5.png" alt="Minimalist Style" class="trend-card__img" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Minimalist Style</span>
+              <span class="trend-card__price">$25.7</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+            <!-- /.trend-card__content -->
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-6.png" alt="Luxury Gown" class="trend-card__img trend-card__img--6" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Luxury Gown</span>
+              <span class="trend-card__price">$30.6</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+            <!-- /.trend-card_content -->
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-7.png" alt="Full Coloristy" class="trend-card__img trend-card__img--7" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Full Coloristy</span>
+              <span class="trend-card__price">$25.7</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-1.png" alt="Pinky Winky" class="trend-card__img" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Pinky Winky</span>
+              <span class="trend-card__price">$109</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-2.png" alt="Holiday Vibes" class="trend-card__img trend-card__img--2" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Holiday Vibes</span>
+              <span class="trend-card__price">$51.2</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-3.png" alt="Swaggie Shaggy" class="trend-card__img trend-card__img--3" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Swaggie Shaggy</span>
+              <span class="trend-card__price">$81.3</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card">
+            <div class="trend-card__box">
+              <img src="img/trend-4.png" alt="Red Formal" class="trend-card__img trend-card__img--4" />
+            </div>
+            <div class="trend-card__content">
+              <span class="trend-card__name">Red Formal</span>
+              <span class="trend-card__price">$66.8</span>
+              <button class="trend-card__button">
+                <img src="img/shopping-cart.svg" alt="Кнопка: корзина" />
+              </button>
+            </div>
+          </div>
+          <div class="trend-card trend-card__plus">
+            <a href="#" class="trend-card__link"><img src="img/plus.svg" alt="Кнопка: смотреть больше коллекций"
+                class="trend-card__img" /><span class="trend-card__label">Смотреть <br />больше коллекций</span></a>
+          </div>
+        </div>
+        <!-- /.ternds-cards -->
+      </div>
+      <!-- /.tab-content -->
+    </section>
+    <div class="testimonial">
+      <div class="swiper-container testimonial-slider">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="testimonial-slider__item">
+              <img src="img/quote-left.svg" alt="Иконка: кавычки" class="testimonial-quote" />
+              <p lang="en" class="testimonial-text">
+                Мне очень нравятся дизайн и стили, которые создает Ehya. Они
+                такие разные и новаторские. Я покупала несколько раз из
+                коллекций, и что мне нравится, это то, что они действительно
+                неподвластны времени, а качество ткани просто превосходно. Я с
+                нетерпением жду новых коллекций от сезона к сезону
+              </p>
+              <span lang="en" class="testimonial-client">
+                Алисия Пума - клиент Fashun</span>
+            </div>
+            <!-- /.testimonial-slider__item -->
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-slider__item">
+              <img src="img/quote-left.svg" alt="Иконка: кавычки" class="testimonial-quote" />
+              <p lang="en" class="testimonial-text">
+                Я очень люблю магазин Ehya. Нравится все, атмосфера магазина,
+                продавцы консультанты. Всегда очень приятное обслуживание. В
+                каждой новой коллекции можно найти обновки по своим
+                предпочтениям. Модели женственные, утонченные, для стройных
+                девушек.
+              </p>
+              <span lang="en" class="testimonial-client">
+                Мария Старкова - клиент Fashun
+              </span>
+            </div>
+            <!-- /.testimonial-slider__item -->
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-slider__item">
+              <img src="img/quote-left.svg" alt="Иконка: кавычки" class="testimonial-quote" />
+              <p lang="en" class="testimonial-text">
+                Так как я давно занимаюсь одеждой и разными брендами - решила
+                наконец написать об одном известном бренде Ehya. Одежда этого
+                бренда - это микс повседневной, для офиса и для вечеринок, в
+                принципе - там можно найти абсолютно все, начиная от
+                кардиганов и джинсов и заканчивая ремешками и прочими
+                аксессуарами.
+              </p>
+              <span lang="en" class="testimonial-client">
+                Хана Меир - клиент Fashun
+              </span>
+            </div>
+            <!-- /.testimonial-slider__item -->
+          </div>
+        </div>
+
+        <div class="swiper-pagination testimonial-pagination">
+          <div class="testimonial-pagination__button"></div>
+          <div class="testimonial-pagination__button testimonial-pagination__button--active"></div>
+          <div class="testimonial-pagination__button"></div>
+        </div>
+      </div>
+    </div>
+    <!-- /.testimonial -->
+    <section class="stories">
+      <div class="swiper-container stories-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide stories-slide">
+            <div class="stories-content">
+              <span class="stories-tag">Истории</span>
+              <h2 lang="en" class="stories-subtitle"><span class="hide">Это</span> История Fashun</h2>
+              <p class="stories-text">
+                Ознакомьтесь с нашим рассказом о моде. Написано нашим дизайнером и
+                специалистом.
+              </p>
+              <div class="stories-btn">
+                <div class="stories-btn__left">
+                  <img src="img/arrow-prev.svg" alt="Кнопка: Назад" class="stories-btn__img" />
+                </div>
+                <div class="stories-btn__right">
+                  <img src="img/arrow-next.svg" alt="Кнопка: Вперед" class="stories-btn__img" />
+                </div>
+              </div>
+              <!-- /.stories-btn -->
+            </div>
+            <!-- /.stories-content -->
+            <div class="stories-articles">
+              <article class="stories-article stories-article__1">
+                <div class="stories-article__box">
+                  <img src="img/post-1.png" alt="Фото-иллюстрация к статье" class="stories-article__img" />
+                </div>
+                <div class="stories-article__wrap">
+                  <h3 lang="en" class="stories-article__title">
+                    Mix & Match Style 01: повседневный и формальный стиль
+                  </h3>
+                  <a href="#" class="stories-article__link">Читать далее</a>
+                </div>
+              </article>
+              <article class="stories-article stories-article__2">
+                <div class="stories-article__box">
+                  <img src="img/post-2.png" alt="Фото-иллюстрация к статье" class="stories-article__img" />
+                </div>
+                <div class="stories-article__wrap">
+                  <h3 lang="en" class="stories-article__title">
+                    Лайфхак: Купите одежду Thrifft на воскресном рынке
+                  </h3>
+                  <a href="#" class="stories-article__link">Читать далее</a>
+                </div>
+              </article>
+            </div>
+            <!-- /.stories-articles -->
+          </div>
+          <!-- .stories-slide -->
+          <div class="swiper-slide stories-slide ">
+            <div class="stories-content">
+              <span class="stories-tag">Истории</span>
+              <h2 lang="en" class="stories-subtitle"><span class="hide">Это</span> История Fashun</h2>
+              <p class="stories-text">
+                Ознакомьтесь с нашим рассказом о моде. Написано нашим дизайнером и
+                специалистом.
+              </p>
+              <div class="stories-btn">
+                <div class="stories-btn__left">
+                  <img src="img/arrow-prev.svg" alt="Кнопка: Назад" class="stories-btn__img" />
+                </div>
+                <div class="stories-btn__right">
+                  <img src="img/arrow-next.svg" alt="Кнопка: Вперед" class="stories-btn__img" />
+                </div>
+              </div>
+              <!-- /.stories-btn -->
+            </div>
+            <!-- /.stories-content -->
+            <div class="stories-articles">
+              <article class="stories-article stories-article__2">
+                <div class="stories-article__box">
+                  <img src="img/post-2.png" alt="Фото-иллюстрация к статье" class="stories-article__img" />
+                </div>
+                <div class="stories-article__block"></div>
+                <div class="stories-article__wrap">
+                  <h3 lang="en" class="stories-article__title">
+                    Лайфхак: Купите одежду Thrifft на воскресном рынке
+                  </h3>
+                  <a href="#" class="stories-article__link">Читать далее</a>
+                </div>
+              </article>
+              <article class="stories-article stories-article__1">
+                <div class="stories-article__box">
+                  <img src="img/post-1.png" alt="Фото-иллюстрация к статье" class="stories-article__img" />
+                </div>
+                <div class="stories-article__wrap">
+                  <h3 lang="en" class="stories-article__title">
+                    Mix & Match Style 01: повседневный и формальный стиль
+                  </h3>
+                  <a href="#" class="stories-article__link">Читать далее</a>
+                </div>
+              </article>
+            </div>
+            <!-- /.stories-articles -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="modal-overlay"></div>
+  <!-- /.modal__overlay -->
+  <div class="modal-dialog">
+    <a href="#" class="modal-dialog__close">
+      <img src="img/close.svg" alt="icon: close" />
+    </a>
+    <a href="#" class="modal-dialog__link">Главная</a>
+    <a href="#" class="modal-dialog__link">Новинки</a>
+    <a href="#" class="modal-dialog__link">Тренды</a>
+    <a href="#" class="modal-dialog__link">Отзывы</a>
+    <a href="#" class="modal-dialog__link">Контакты</a>
+    <button data-toggle="modal" class="modal-dialog__button">Войти</button>
+  </div>
+  <!-- /.modal-dialog -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

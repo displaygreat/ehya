@@ -61,4 +61,15 @@ $(document).ready(function () {
     mySwiper.autoplay.start();
   });
 
+  var mySwiper = new Swiper('.stories-slider', {
+    loop: true,
+    autoplay: false,
+
+    navigation: {
+      nextEl: '.stories-btn__left',
+      prevEl: '.stories-btn__right',
+    },
+
+  })
+
 });
