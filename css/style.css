@@ -1800,5 +1800,9 @@ img {
   .new-string {
     display: inline;
   }
+  .invalid {
+    width: 107%;
+    margin-left: -10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
