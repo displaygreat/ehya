@@ -1,0 +1,62 @@
+.footer
+  width: 1140px
+  margin: 0 auto
+  padding: 128px 0 109px 0
+  display: flex
+  justify-content: space-between
+  &-info
+    width: 263px
+  &-logo
+    &__link
+      display: block
+      margin-bottom: 28px
+  &-text
+    margin: 0 0 32px 0
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    color: $color-text
+  &-social
+    display: flex
+    &__link
+      width: 42px
+      height: 40px
+      display: block
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: #EFF1F3
+      border-radius: 50%
+      margin-right: 6px
+      cursor: pointer
+    &__img
+      width: 18px
+      height: 18px
+  &-map
+    width: 750px
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    column-gap: 30px
+    margin-right: 100px
+    &__navigation,
+    &__services,
+    &__about,
+    &__contacts
+      grid-column: span 1
+    &__link
+      display: block
+      text-decoration: none
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 22px
+      color: $primary
+      margin-bottom: 24px
+    &__subtitle
+      font-style: normal
+      font-weight: 700
+      font-size: 18px
+      line-height: 25px
+      color: $primary
+      margin: 0 0 31px 0
