@@ -28,15 +28,15 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.hostinger.co.il'; // SMTP сервера вашей почты
-    $mail->Username   = 'oxana'; // Логин на почте
-    $mail->Password   = 'Shva9301264#'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'rommor930'; // Логин на почте
+    $mail->Password   = 'romshva9301264'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 587;
-    $mail->setFrom('oxana@heydayweb.site', 'oxana'); // Адрес самой почты и имя отправителя
+    $mail->Port       = 465;
+    $mail->setFrom('rommor930@gmail.com'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('oxana@heydayweb.site');  
+    $mail->addAddress('rommor930@gmail.com');  
 
 // Отправка сообщения
 $mail->isHTML(true);

@@ -1132,7 +1132,7 @@ img {
   align-items: center;
   box-sizing: border-box;
   background-color: #1565D8;
-  background-image: url(../img/oval-left.svg), url(../img/oval.svg);
+  background-image: url(../img/oval.svg), url(../img/oval.svg);
   background-repeat: no-repeat;
   background-position-x: left, right;
   background-position-y: top, bottom;
@@ -1201,6 +1201,10 @@ img {
   border-radius: 4px;
 }
 
+.newsletter-thankyou {
+  height: 140px;
+}
+
 .invalid {
   width: 447px;
   margin-bottom: 10px;
@@ -1208,6 +1212,10 @@ img {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
+}
+
+.new-string {
+  display: block;
 }
 
 @media (min-width: 992px) {
@@ -1403,6 +1411,23 @@ img {
   }
   .stories-btn {
     margin: 0 auto 26px;
+  }
+  .newsletter {
+    height: 402px;
+    flex-direction: column;
+    padding: 70px 150px 79px;
+    background-position-x: -642px, 346px;
+    background-position-y: -845px, 289px;
+  }
+  .newsletter-subtitle {
+    text-align: center;
+  }
+  .newsletter-text {
+    text-align: center;
+  }
+  .newsletter-form__wrap {
+    margin: 0 auto;
+    margin-left: 10px;
   }
 }
 
@@ -1660,6 +1685,9 @@ img {
   .swiper-slider {
     width: 92%;
   }
+  .stories {
+    margin-bottom: 49px;
+  }
   .stories::before {
     margin-bottom: 48px;
   }
@@ -1728,6 +1756,49 @@ img {
   }
   .hide {
     display: none;
+  }
+  .newsletter {
+    height: 414px;
+    padding: 62px 20px;
+  }
+  .newsletter-wrap {
+    flex-direction: column;
+  }
+  .newsletter-subtitle {
+    width: 100%;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin: 3px 0 25px 0;
+  }
+  .newsletter-text {
+    width: 100%;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #FAFAFB;
+  }
+  .newsletter-form {
+    margin: 0;
+  }
+  .newsletter-form__wrap {
+    display: flex;
+    margin: 0;
+  }
+  .newsletter-form__input {
+    padding: 12px 20px 12px 48px;
+    margin-bottom: 10px;
+    width: 107%;
+    margin-left: -10px;
+  }
+  .newsletter-form__button {
+    width: 107%;
+    margin-left: -10px;
+    position: static;
+  }
+  .new-string {
+    display: inline;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -155,6 +155,23 @@
       margin: 0 0 34px 0
     &-btn
       margin: 0 auto 26px
+  .newsletter
+    height: 402px
+    flex-direction: column
+    padding: 70px 150px 79px
+    background-position-x: -642px, 346px
+    background-position-y: -845px, 289px
+    &-wrap
+    &-subtitle
+      text-align: center
+    &-text
+      text-align: center
+    &-form
+      &__wrap
+        margin: 0 auto
+        margin-left: 10px
+      &__input
+      &__button
 
 @media (max-width: 576px)
   .header
@@ -369,6 +386,7 @@
     &-slider
       width: 92%
   .stories
+    margin-bottom: 49px
     &::before
       margin-bottom: 48px
     &-slide
@@ -423,3 +441,37 @@
         margin: 2px 0 15px 0
   .hide
     display: none
+  .newsletter
+    height: 414px
+    padding: 62px 20px
+    &-wrap
+      flex-direction: column
+    &-subtitle
+      width: 100%
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      letter-spacing: 0.2px
+      margin: 3px 0 25px 0
+    &-text
+      width: 100%
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      color: #FAFAFB
+    &-form
+      margin: 0
+      &__wrap
+        display: flex
+        margin: 0
+      &__input
+        padding: 12px 20px 12px 48px
+        margin-bottom: 10px
+        width: 107%
+        margin-left: -10px
+      &__button
+        width: 107%
+        margin-left: -10px
+        position: static
+  .new-string
+    display: inline
