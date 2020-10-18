@@ -1,0 +1,72 @@
+.newsletter
+  height: 338px
+  padding: 100px 150px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  box-sizing: border-box
+  background-color: $secondary
+  background-image: url(../img/oval-left.svg), url(../img/oval.svg)
+  background-repeat: no-repeat
+  background-position-x: left, right
+  background-position-y: top, bottom
+  margin-bottom: 128px
+  &-subtitle
+    margin: 3px 0 12px 0
+    font-family: 'hk-grotesk-bold'
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+    color: $light
+  &-text
+    margin: 0
+    width: 436px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    color: $light
+  &-form
+    position: relative
+    margin-right: 65px
+    display: flex
+    flex-direction: column
+    &__input
+      display: block
+      width: 447px
+      padding: 17px 20px 17px 48px
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: #959EAD
+      background: $light
+      background-image: url(../img/mail.svg)
+      background-repeat: no-repeat
+      background-position: 20px center
+      border: 1px solid #C3CAD9
+      box-sizing: border-box
+      border-radius: 8px
+    &__button
+      position: absolute
+      right: 5px
+      top: 5px
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+      color: $light
+      background-color: $primary
+      padding: 11px 27px
+      border: none
+      border-radius: 4px
+.invalid
+  width: 447px
+  margin-bottom: 10px
+  color: #ff5252
+  font-weight: 600
+  font-size: 16px
+  line-height: 22px

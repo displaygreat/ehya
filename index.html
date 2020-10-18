@@ -547,6 +547,22 @@
         </div>
       </div>
     </section>
+    <section class="newsletter">
+      <div class="newsletter-wrap">
+        <h2 lang="en" class="newsletter-subtitle">Подпишитесь</h2>
+        <p class="newsletter-text">Напишите свой адрес электронной почты.<br> Мы будем присылать вам новости из мира
+          моды.
+        </p>
+      </div>
+      <!-- /.newsletter-wrap -->
+      <div class="newsletter-form__wrap">
+        <form action="send.php" method="POST" class="newsletter-form form">
+          <input type="email" name="email" class="newsletter-form__input" placeholder="Ваш Email" required>
+          <button class="newsletter-form__button">Подписаться</button>
+        </form>
+      </div>
+      <!-- /.newsletter-form__wrap -->
+    </section>
   </main>
   <div class="modal-overlay"></div>
   <!-- /.modal__overlay -->
@@ -563,6 +579,7 @@
   </div>
   <!-- /.modal-dialog -->
   <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
