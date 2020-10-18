@@ -687,7 +687,7 @@ img {
 .trends {
   width: 1130px;
   margin: 0 auto;
-  margin-bottom: 90px;
+  margin-bottom: 155px;
 }
 
 .trends-header {
@@ -1069,13 +1069,13 @@ img {
   cursor: pointer;
 }
 
+.stories-articles {
+  width: 662px;
+}
+
 .stories-article__1, .stories-article__2 {
   position: relative;
   margin-top: 10px;
-}
-
-.stories-article__2 {
-  margin-right: 9px;
 }
 
 .stories-article {
@@ -1275,6 +1275,9 @@ img {
   .stories-slide {
     flex-direction: column;
     width: 100%;
+  }
+  .stories-articles {
+    width: 674px;
   }
   .stories-article {
     height: 478px;
@@ -1613,6 +1616,7 @@ img {
   .stories-articles {
     flex-direction: column;
     align-self: center;
+    width: 280px;
   }
   .stories-article {
     height: 423px;
