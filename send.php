@@ -11,7 +11,6 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-
 // Формирование самого письма
 $title = "Новое обращение Ehya";
 $body = "

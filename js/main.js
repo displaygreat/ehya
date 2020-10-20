@@ -29,59 +29,6 @@ $(document).ready(function () {
     modalDialog.removeClass('modal-dialog__visible')
   }
 
-  // modal-login
-  // menuButton.on('click', openMenu);
-  // headerMenuClose.on('click', closeMenu);
-  // overlay.on('click', closeMenu);
-
-  // var heroButton = $('.hero__button');
-  // var closeModalButton = $(".modal__close");
-  // var modalOverlay = $(".modal__overlay");
-  // var modalDialog = $(".modal__dialog");
-  // var loginButton = $(".login-button");
-  // var modalLogin = $(".modal__login");
-  // var buttonLogin = $("login-btn__button");
-
-  // const openModal = () => {
-  //   modalOverlay.addClass('modal__overlay_visible');
-  //   modalDialog.addClass('modal__dialog_visible');
-  // };
-
-  // const openLogin = () => {
-  //   modalOverlay.addClass('modal__overlay_visible');
-  //   modalLogin.addClass('modal__login_visible');
-  //   closeMenu();
-  // }
-
-  // const closeModal = () => {
-  //   event.preventDefault();
-  //   modalOverlay.removeClass('modal__overlay_visible');
-  //   modalDialog.removeClass('modal__dialog_visible');
-  //   modalLogin.removeClass('modal__login_visible');
-  // };
-  // console.log($('.login-button').textContent);
-  // $('.login-button').textContent = 'Р’С‹Р№С‚Рё';
-
-  // const login = () => {
-  //   closeModal();
-  // }
-
-  // heroButton.on('click', openModal);
-  // loginButton.on('click', openLogin);
-  // buttonLogin.on('click', login);
-
-  // closeModalButton.on('click', closeModal);
-  // modalOverlay.on('click', closeModal);
-
-  // document.addEventListener('keydown', (event) => {
-  //   if (event.code === 'Escape') {
-  //     closeModal();
-  //     closeMenu();
-  //   };
-  // });
-  // modal-login
-
-
   var modalButton = $("[data-toggle=modal]");
   var modalCloseButton = $(".modal__close");
 
@@ -97,7 +44,6 @@ $(document).ready(function () {
     }
   });
 
-
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalLogin = $(".modal__login");
@@ -112,10 +58,6 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay-visible');
     modalLogin.removeClass('modal__login_visible')
   }
-
-
-
-
 
   var tab = $('.tab');
   var tabContent = $('.tab-content');
@@ -154,8 +96,6 @@ $(document).ready(function () {
 
   })
 
-
-
   var mySwiper = new Swiper('.stories-slider', {
     loop: false,
     autoplay: false,
@@ -167,7 +107,6 @@ $(document).ready(function () {
     },
 
   })
-
 
   //Обработка форм
   $('.form').each(function () {
