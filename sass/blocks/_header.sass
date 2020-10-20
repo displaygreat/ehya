@@ -27,39 +27,61 @@
     text-align: center
     border: 2px solid $secondary
     box-sizing: border-box
-    filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
+    // filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
+    background-color: #fff
     border-radius: 8px
     cursor: pointer
     margin-left: 50px
-    &__mobile
+  &-btn
+    width: 22px
+    height: 18px
+    padding: 0
+    // display: flex
+    display: none
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    border: none
+    background-color: $light
+    cursor: pointer
+    &__line
       width: 22px
-      height: 18px
-      padding: 0
-      display: flex
-      display: none
-      flex-direction: column
-      align-items: center
-      justify-content: space-between
-      border: none
-      background-color: $light
-      cursor: pointer
-      &-line
-        width: 22px
-        height: 2px
-        background-color: #3A4C66
-        border-radius: 2px
+      height: 2px
+      background-color: #3A4C66
+      border-radius: 2px
+    // &__mobile
+    //   width: 22px
+    //   height: 18px
+    //   padding: 0
+    //   display: flex
+    //   display: none
+    //   flex-direction: column
+    //   align-items: center
+    //   justify-content: space-between
+    //   border: none
+    //   background-color: $light
+    //   cursor: pointer
+    //   &-line
+    //     width: 22px
+    //     height: 2px
+    //     background-color: #3A4C66
+    //     border-radius: 2px
 .hero
-  width: 1175px
+  width: 1280px
   margin: 0 auto
-  padding: 68px 0 46px 107px
-  background-color: #E8EAE9
-  background-image: url(../img/hero-gradient.png), url(../img/hero-img.png)
-  background-repeat: no-repeat
-  background-position-x: 368px
-  background-position-y: -366px
-  background-size: 150%, 82%
+  position: relative
   border-radius: 8px
   margin-bottom: 120px
+  overflow: hidden
+  &-wrap
+    margin: 69px 0 44px 105px
+  &-img
+    position: absolute
+    object-fit: cover
+    z-index: -1
+    height: 100%
+    &-mobile
+      display: none
   &-tag
     width: fit-content
     background: rgba(54, 179, 126, 0.1)
@@ -80,13 +102,13 @@
     line-height: 68px
     letter-spacing: 0.2px
     color: $primary
-    margin-bottom: 28px
+    margin: 34px 0 28px 0
   &-text
     width: 620px
     font-size: 20px
     line-height: 36px
     color: $color-text
-    margin-bottom: 48px
+    margin-bottom: 51px
   &-button
     max-width: 259px
     display: block
@@ -100,7 +122,7 @@
     text-align: center
     color: #FFFFFF
     text-decoration: none
-    margin-bottom: 48px
+    margin-bottom: 50px
   &-advantages
     display: flex
     align-items: center
@@ -172,3 +194,86 @@
       position: absolute
       top: 12px
       right: 16px
+.modal
+  &__login
+    width: 600px
+    background-color: #fff
+    border-radius: 8px
+    margin: 0 auto
+    position: relative
+    position: fixed
+    top: 50%
+    left: 50%
+    padding: 38px 0
+    transform: translate(-50%, -50%)
+    z-index: 101
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    visibility: hidden
+    opacity: 0
+    &_visible
+      visibility: visible
+      opacity: 1
+  &__overlay
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: #DCDBD9
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &-visible
+      visibility: visible
+      opacity: 0.5
+  &__content
+    position: relative
+    box-sizing: border-box
+    position: relative
+    padding: 20px 0
+    // display: flex
+
+    // justify-content: center
+  &__close
+    position: absolute
+    top: 0
+    right: 18px
+    top: -18px
+    text-decoration: none
+    cursor: pointer
+  &__input
+    display: block
+    width: 447px
+    padding: 17px 20px 17px 48px
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: #959EAD
+    background: $light
+    border: 1px solid #C3CAD9
+    box-sizing: border-box
+    border-radius: 8px
+    margin: 0 auto
+    &_group
+      margin-bottom: 30px
+      margin: 0 auto
+      flex-direction: column
+      margin-bottom: 30px
+      display: flex
+      width: 447px
+  &__button
+    display: block
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: $light
+    background-color: $primary
+    padding: 11px 27px
+    border: none
+    border-radius: 4px
+    cursor: pointer
+    margin: 0 auto

@@ -24,8 +24,13 @@
     height: 168px
     overflow: scroll
     text-overflow: ellipsis
+    -ms-overflow-style: none
+    scrollbar-width: none
+    // &::-webkit-scrollbar
+    //   width: 0
     &::-webkit-scrollbar
-      width: 0
+      display: none
+
   &-client
     display: block
     font-family: 'hk-grotesk-bold', sans-serif

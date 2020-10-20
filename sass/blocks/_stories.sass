@@ -1,9 +1,18 @@
 .stories
   width: 1150px
   margin: 0 auto
+  display: flex
+  justify-content: space-between
   margin-bottom: 140px
+  &-line
+    display: block
+    width: 1140px
+    height: 1px
+    background-color: #E5EAF4
+    margin: 0 auto
+    margin-bottom: 118px
   &-slider
-    // width: 1150px
+    width: 662px
     height: max-content
   &-slide
     display: flex
@@ -12,17 +21,18 @@
     // width: 662px
     display: flex
     justify-content: space-between
-  &::before
-    content: ''
-    display: block
-    width: 1140px
-    height: 1px
-    background-color: #E5EAF4
-    margin: 0 auto
-    margin-bottom: 118px
+  // &::before
+  //   content: ''
+  //   display: block
+  //   width: 1140px
+  //   height: 1px
+  //   background-color: #E5EAF4
+  //   margin: 0 auto
+  //   margin-bottom: 118px
   &-tag
     display: block
     width: fit-content
+    width: -moz-fit-content
     font-style: normal
     font-weight: 600
     font-size: 14px
@@ -51,30 +61,52 @@
     line-height: 36px
     color: $color-text
     margin: 0 0 50px 0
+  &-button
+    border: 2px solid $primary
+    fill: $primary
   &-btn
     width: 132px
     display: flex
     justify-content: space-between
-    &__left
-      width: 54px
-      height: 56px
-      display: flex
-      justify-content: center
-      align-items: center
+    &__unactive
       border: 2px solid #959EAD
-      box-sizing: border-box
-      border-radius: 50%
-      cursor: pointer
+      fill: #959EAD
+      display: none
+    &__left,
     &__right
       width: 54px
       height: 56px
       display: flex
       justify-content: center
       align-items: center
-      border: 2px solid $primary
+      // border: 2px solid #959EAD
+      // fill: #959EAD
       box-sizing: border-box
       border-radius: 50%
       cursor: pointer
+
+    // &__left:hover,
+    // &__right:hover
+      // width: 54px
+      // height: 56px
+      // display: flex
+      // justify-content: center
+      // align-items: center
+      // border: 2px solid $primary
+      // fill: $primary
+      // box-sizing: border-box
+      // border-radius: 50%
+      // cursor: pointer
+
+    // &__right
+    //   &--active
+    //     border: 2px solid $primary
+    //     fill: $primary
+    // &__left
+    //   &--active
+    //     border: 2px solid $primary
+    //     fill: $primary
+
   &-articles
     width: 662px
   &-article__1,

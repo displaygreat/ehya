@@ -1,0 +1,40 @@
+.thankyou
+  &-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+  &-text
+    margin-top: 40px
+    text-align: center
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    color: #ffffff
+  &-link
+    text-align: center
+    text-decoration: none
+    &__img
+      &:hover
+        opasity: 50%
+    &__text
+      text-decoration: none
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 32px
+      color: #ffffff
+      &:hover
+        opacity: 50%
+.newsletter
+  &-thankyou
+    height: 300px
+@media (max-width: 567px)
+  .newsletter
+    &-thankyou
+      height: 400px
+  .thankyou
+    &-container
+      width: 90%
+      margin: 40px auto 0

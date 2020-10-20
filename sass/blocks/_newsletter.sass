@@ -1,15 +1,26 @@
 .newsletter
-  height: 338px
-  padding: 100px 150px
-  display: flex
-  justify-content: space-between
-  align-items: center
-  box-sizing: border-box
+  // width: 1150px
+  // padding: 100px 0
+  // height: 338px
+  // display: flex
+  // justify-content: space-between
+  // align-items: center
+  // box-sizing: border-box
   background-color: $secondary
   background-image: url(../img/oval.svg), url(../img/oval.svg)
   background-repeat: no-repeat
-  background-position-x: left, right
-  background-position-y: top, bottom
+  background-position-x: -630px, 900px
+  background-position-y: -807px, -34px
+  &-container
+    width: 1150px
+    height: 338px
+    padding: 100px 0
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    box-sizing: border-box
+
   &-subtitle
     margin: 3px 0 12px 0
     font-family: 'hk-grotesk-bold'
@@ -27,6 +38,8 @@
     font-size: 18px
     line-height: 32px
     color: $light
+    &-thankyou
+      padding-top: 50px
   &-form
     position: relative
     margin-right: 65px
@@ -63,8 +76,6 @@
       border: none
       border-radius: 4px
       cursor: pointer
-  &-thankyou
-    height: 140px
 .invalid
   width: 447px
   margin-bottom: 10px
@@ -74,3 +85,14 @@
   line-height: 22px
 .new-string
   display: block
+.thankyou
+  &-link
+    display: block
+    margin-top: 30px
+    &__text
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      color: $light
+      margin-right: 16px
